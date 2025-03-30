@@ -13,7 +13,7 @@ const Home = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/recipes")
+    axios.get("https://recipe-app-backend-1-i8hd.onrender.com/api/recipes")
       .then(response => {
         console.log("Fetched Recipes:", response.data);
         setRecipes(response.data);
